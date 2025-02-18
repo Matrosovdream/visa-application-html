@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header
+    class="flex items-center justify-between px-6 py-4 bg-white shadow-md font-inter"
+  >
+    <img src="assets/evisa_logo.png" alt="Logo" class="h-12" />
+
+    <nav class="hidden md:flex space-x-6 font-medium text-lg">
+      <a href="#" class="hover:text-evisablackhover">Main</a>
+      <a href="#" class="hover:text-evisablackhover">Blog</a>
+      <a href="#" class="hover:text-evisablackhover">Support</a>
+    </nav>
+
+    <div class="flex items-center space-x-8">
+      <div class="flex items-center space-x-4">
+        <form class="relative group">
+          <button
+            type="button"
+            class="flex items-center space-x-1 font-medium text-lg group-hover:"
+          >
+            <span class="hover:text-evisablackhover">English</span>
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute z-10 left-0 mt-2 bg-white p-3 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+          >
+            <a
+              href="#"
+              class="block py-2 text-lg font-medium hover:text-evisablue"
+              >English</a
+            >
+            <a
+              href="#"
+              class="block py-2 text-lg font-medium hover:text-evisablue"
+              >Russian</a
+            >
+          </div>
+        </form>
+        <div class="h-5 bg-evisalight w-0.5 rounded-full"></div>
+
+        <form class="relative group">
+          <button
+            type="button"
+            class="flex items-center space-x-1 text-lg font-medium group-hover:"
+          >
+            <span class="hover:text-evisablackhover">USD</span>
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute z-10 left-0 mt-2 bg-white p-3 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+          >
+            <a
+              href="#"
+              class="block py-2 text-lg hover:text-evisablue font-medium"
+              >USD</a
+            >
+            <a
+              href="#"
+              class="block py-2 text-lg hover:text-evisablue font-medium"
+              >EUR</a
+            >
+            <a
+              href="#"
+              class="block py-2 text-lg hover:text-evisablue font-medium"
+              >CAD</a
+            >
+          </div>
+        </form>
+      </div>
+      <a
+        href="#"
+        class="px-3 py-2 text-white font-medium bg-evisablue rounded-xl hover:bg-evisabluekhover"
+        >Sign in</a
+      >
+    </div>
+  </header>
+  <body class="font-inter">
+    <h1 class="text-3xl font-semibold ml-12 mt-6">
+      Universal eVisa 60 days - 1 entry
+    </h1>
+    <div
+      class="mx-auto mt-8  flex w-full max-w-[calc(100%-6rem)] items-center justify-between"
+    >
+      <div
+        class="absolute h-[3px] w-full max-w-[calc(100%-6rem)] bg-evisasuperlight -z-10"
+      ></div>
+
+      <!-- Step 1 -->
+      <div class="flex items-center">
+        <div
+          class="flex px-4 py-2 items-center justify-center rounded-full bg-evisablue text-white"
+        >
+          Trip details
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex items-center">
+        <div
+          class="flex px-4 py-2 items-center justify-center rounded-full bg-evisasuperlight text-evisamedium"
+        >
+          Your info
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex items-center">
+        <div
+          class="flex px-4 py-2 items-center justify-center rounded-full bg-evisasuperlight text-evisamedium"
+        >
+          Passport
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex items-center">
+        <div
+          class="flex px-4 py-2 items-center justify-center rounded-full bg-evisasuperlight text-evisamedium"
+        >
+          Checkout
+        </div>
+      </div>
+    </div>
+    <div class="min-h-screen flex p-6 font-inter">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-[10vw] w-full bg-white  p-6"
+      >
+        <!-- Left Column -->
+        <div class="border-solid max-w-3xl text-">
+          <div class="mb-4">
+            <label  class="block text-evisamedium">
+              Your full name *
+            </label>
+            <input
+              type="text"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisasuperlight hover:border-evisalightblue focus:outline-0 focus:border-evisalightblue rounded-lg"
+            />
+          </div>
+          <div class="mb-4">
+            <label  class="block text-evisamedium">
+              When do you arrive at the country destination? *
+            </label>
+            <input
+              type="text"
+              placeholder="DD/MM/YYYY"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisasuperlight hover:border-evisalightblue focus:outline-0 focus:border-evisalightblue rounded-lg"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="visa-type" class="block text-evisamedium"
+              > Which airport do you arrive? *</label
+            >
+            <select
+              id="visa-type"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisasuperlight hover:border-evisalightblue rounded-lg"
+            >
+              <option>1</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div class="mb-4">
+            <label  class="block text-evisamedium">
+              Phone number *
+            </label>
+            <input
+              type="text"
+              placeholder="+1 (___) ___ ____"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisasuperlight hover:border-evisalightblue focus:border-evisalightblue focus:outline-0  rounded-lg"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label  class="block text-evisamedium">
+              Email address *
+            </label>
+            <input
+              type="text"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisasuperlight hover:border-evisalightblue focus:outline-0 focus:border-evisalightblue rounded-lg"
+            />
+          </div>
+          <div class="flex w-full justify-center">
+            <button class="mt-2 mr-2 w-[40%] bg-evisalight text-white font-medium py-2 rounded-lg hover:bg-evisasuperlight hover:text-evisamedium"
+          >
+          Previous step
+          </button>
+          
+          <button
+            class="mt-2 w-full bg-evisablue text-white font-medium py-2 rounded-lg hover:bg-evisabluekhover"
+          >
+          Save and continue
+          </button>
+          </div>
+          
+        </div>
+
+        <!-- Right Column -->
+        <div class="mx-auto max-w-md rounded-lg bg-white ">
+          <h2 class="mb-1 px-4 text-2xl font-semibold">Order details</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full table-auto">
+              <thead>
+                <tr class="">
+                  <th
+                    class="px-4 py-2 text-left font-semibold text-sm text-evisamedium"
+                  >
+                    Product name
+                  </th>
+                  <th
+                    class="px-4 py-2 text-right font-semibold text-sm text-evisamedium"
+                  >
+                    Price
+                  </th>
+                  <th
+                    class="px-4 py-2 text-right font-semibold text-sm text-evisamedium"
+                  >
+                    Quantity
+                  </th>
+                  <th
+                    class="px-4 py-2 text-right font-semibold text-sm text-evisamedium"
+                  >
+                    Subtotal
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t">
+                  <td class="px-4 py-2 text-sm text-evisablack">
+                    Universal eVisa 60 days (SuperRush)
+                  </td>
+                  <td class="px-4 py-2 text-center text-sm text-evisablack">
+                    $200
+                  </td>
+                  <td class="px-4 py-2 text-center text-sm text-evisablack">
+                    2
+                  </td>
+                  <td class="px-4 py-2 text-right text-sm text-evisablack">
+                    $400
+                  </td>
+                </tr>
+                <tr class="border-t">
+                  <td class="px-4 py-2 text-sm text-evisablack">
+                    Government fees
+                  </td>
+                  <td class="px-4 py-2 text-center text-sm text-evisablack">
+                    $55
+                  </td>
+                  <td class="px-4 py-2 text-center text-sm text-evisablack">
+                    2
+                  </td>
+                  <td class="px-4 py-2 text-right text-sm text-evisablack">
+                    $110
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr
+                  class="  border-t border-solid border-t-1 border-evisalight"
+                >
+                  <td
+                    class="px-4 py-2  font-semibold text-evisablack"
+                    colspan="3"
+                  >
+                    Total
+                  </td>
+                  <td
+                    class="px-4 py-2 text-right  font-semibold text-evisablack"
+                  >
+                    $510
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

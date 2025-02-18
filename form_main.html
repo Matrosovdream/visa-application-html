@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header
+    class="flex items-center justify-between px-6 py-4 bg-white shadow-md font-inter"
+  >
+    <img src="assets/evisa_logo.png" alt="Logo" class="h-12" />
+
+    <nav class="hidden md:flex space-x-6 font-medium text-lg">
+      <a href="#" class="hover:text-evisablackhover">Main</a>
+      <a href="#" class="hover:text-evisablackhover">Blog</a>
+      <a href="#" class="hover:text-evisablackhover">Support</a>
+    </nav>
+
+    <div class="flex items-center space-x-8">
+      <div class="flex items-center space-x-4">
+        <form class="relative group">
+          <button
+            type="button"
+            class="flex items-center space-x-1 font-medium text-lg group-hover:"
+          >
+            <span class="hover:text-evisablackhover">English</span>
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute z-10 left-0 mt-2 bg-white p-3 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+          >
+            <a
+              href="#"
+              class="block py-2 text-lg font-medium hover:text-evisablue"
+              >English</a
+            >
+            <a
+              href="#"
+              class="block py-2 text-lg font-medium hover:text-evisablue"
+              >Russian</a
+            >
+          </div>
+        </form>
+        <div class="h-5 bg-evisalight w-0.5 rounded-full"></div>
+
+        <form class="relative group">
+          <button
+            type="button"
+            class="flex items-center space-x-1 text-lg font-medium group-hover:"
+          >
+            <span class="hover:text-evisablackhover">USD</span>
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute z-10 left-0 mt-2 bg-white p-3 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+          >
+            <a
+              href="#"
+              class="block py-2 text-lg hover:text-evisablue font-medium"
+              >USD</a
+            >
+            <a
+              href="#"
+              class="block py-2 text-lg hover:text-evisablue font-medium"
+              >EUR</a
+            >
+            <a
+              href="#"
+              class="block py-2 text-lg hover:text-evisablue font-medium"
+              >CAD</a
+            >
+          </div>
+        </form>
+      </div>
+      <a
+        href="#"
+        class="px-3 py-2 text-white font-medium bg-evisablue rounded-xl hover:bg-evisabluekhover"
+        >Sign in</a
+      >
+    </div>
+  </header>
+  <body>
+    <div class="min-h-screen flex p-6 font-inter">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-[10vw] w-full bg-white rounded-lg p-6"
+      >
+        <!-- Left Column -->
+        <div class="border-solid max-w-3xl text-">
+          <h1 class="text-3xl font-semibold mb-8">
+            Apply now for your Land Islands eVisa
+          </h1>
+          <div class="mb-8 p-4 bg-evisapeach text-evisamedium rounded-2xl">
+            <h2 class="font-semibold mb-1">Visa required</h2>
+            <p class>
+              You need a visa to travel to Land Islands if you have a passport
+              from Saudi Arabia.
+            </p>
+          </div>
+          <div class="mb-4">
+            <label for="nationality" class="block text-evisamedium"
+              >What is your nationality</label
+            >
+            <select
+              id="nationality"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisalight hover:border-evisalightblue rounded-lg"
+            >
+              <option>Saudi Arabia - SA</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="visa-type" class="block text-evisamedium"
+              >Applying for</label
+            >
+            <select
+              id="visa-type"
+              class="mt-1 block w-full px-3 py-2 border-solid border-2 border-evisalight hover:border-evisalightblue rounded-lg"
+            >
+              <option>Universal eVisa 60 days</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <button
+            class="mt-2 w-full bg-evisablue text-white font-medium py-2 rounded-xl hover:bg-evisabluekhover"
+          >
+            Apply for eVisa
+          </button>
+        </div>
+
+        <!-- Right Column -->
+        <div
+          class="border-solid border-3 border-evisablue rounded-2xl p-6 max-w-sm h-50"
+        >
+          <h2 class="text-2xl font-medium mb-4">Universal eVisa</h2>
+          <div class="space-y-2">
+            <p class="flex justify-between">
+              <span class="">Valid for:</span>
+              <span>60 days</span>
+            </p>
+            <p class="flex justify-between">
+              <span class="">Number of entries:</span>
+              <span>1</span>
+            </p>
+            <p class="flex justify-between">
+              <span class="">Max stay:</span>
+              <span>60 days in total</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
